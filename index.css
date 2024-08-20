@@ -1,0 +1,323 @@
+@import url(/reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.header {
+    height: 201px;
+    .header__information {
+        background-color: #f5f5f5;
+        .header__information__container {
+            max-width: 1200px;
+            height: 42px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header__information__container > h6 {
+            color: #666666;
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .information__containers {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+        .information__containers > hr {
+            height: 18px;
+            border: 1px solid #d9d9d9;
+        }
+        .header__information__text {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .header__information__text span {
+            color: #666666;
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 600;
+        }
+    }
+    .header__main {
+        height: 92px;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .header__main > div {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+    .header__main > form {
+        position: relative;
+        height: 48px;
+    }
+
+    .header__main > form .form__button--search {
+        position: absolute;
+        left: 15px;
+        top: 15px;
+    }
+    .header__main form input {
+        width: 507px;
+        border-radius: 10px;
+        background: #f3f9fb;
+        border: none;
+        padding: 15px 32px;
+    }
+    .header__navbar {
+        height: 69px;
+        border: 1px solid #ededed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar__container {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar__select-box {
+        display: flex;
+        align-items: center;
+        padding: 9px 14px;
+        gap: 6px;
+        background-color: #f3f9fb;
+        transition: 0.4s all;
+        border-radius: 18px;
+    }
+
+    .navbar__select-box span {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 500;
+        color: #222222;
+    }
+}
+.container__main {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    .main__section--slider {
+        height: 316px;
+        background: #212844;
+        margin: 20px 0;
+    }
+    .main__section--categories {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .main__section__article {
+        display: flex;
+        justify-content: space-between;
+        height: 46px;
+        border-bottom: 1px solid #ededed;
+    }
+    .main__section__article > h3 {
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 700;
+        color: #666666;
+        border-bottom: 3px solid #008ecc;
+    }
+    .main__section__article > h3 > span {
+        color: #008ecc;
+    }
+    .main__section__article > div {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+        font-weight: 500;
+        color: #222222;
+    }
+    .categories__card__container {
+        height: 172px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .categories__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .categories__card > div {
+        width: 132px;
+        height: 132px;
+        border-radius: 50%;
+        background-color: #f5f5f5;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .categories__card > span {
+        color: #222222;
+        line-height: 20px;
+        font-weight: 500;
+    }
+}
+
+/* smartphone section */
+
+.main__section--smartphones {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    .smartphones__card__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .smartphones__card {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ededed;
+        border-radius: 15px;
+    }
+    .smartphones__card__image {
+        width: 227px;
+        height: 188px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-right-radius: 15px;
+        background-color: #f5f5f5;
+        position: relative;
+    }
+    .smartphones__card__image > div {
+        padding: 11px 8px;
+        background-color: #008ecc;
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: #fff;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 600;
+    }
+
+    .smartphones__card__content {
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #fff;
+        border: 1px;
+        line-height: 18px;
+        color: #222222;
+    }
+    .smartphones__card__content hr {
+        width: 100%;
+        border: 1px solid #ededed;
+    }
+    .smartphones__card__content :first-child {
+        line-height: 18px;
+        font-weight: 600;
+        color: #222222;
+    }
+    .smartphones__card__content > div :first-child {
+        font-weight: 700;
+    }
+    .smartphones__card__content > div :nth-child(2) {
+        text-decoration: line-through;
+    }
+    .smartphones__card__content .smartphone__sale {
+        font-weight: 600;
+        color: #249b3e;
+    }
+}
+/* brands section */
+
+.main__section--top-electronics {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    .top-electronics__card__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .top-electronics__card {
+        width: 359px;
+        height: 167px;
+        padding: 20px;
+        border-radius: 16px;
+        background-color: #313131;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .top-electronics__card .apple__phone {
+        width: 104px;
+        height: 185px;
+        object-fit: cover;
+    }
+    .electronics__card--left-hand:first-child {
+        padding: 9px 20px;
+        background-color: #494949;
+        border-radius: 8px;
+        color: #fff;
+        font-size: 14px;
+        line-height: 16.8px;
+    }
+}
+
+.main__section--daily-essentials {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    .daily-essentials__card__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .daily-essentials__card {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        .daily-essentials__card__image {
+            width: 187px;
+            height: 187px;
+            border-radius: 16px;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f5f5;
+        }
+        .daily-essentials__card__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+        }
+        .daily-essentials__card__content :first-child {
+            color: #666666;
+            font-weight: 600;
+            line-height: 20px;
+        }
+        .daily-essentials__card__content :last-child {
+            font-size: 20px;
+            line-height: 20px;
+            color: #222222;
+            font-weight: 700;
+        }
+    }
+}
